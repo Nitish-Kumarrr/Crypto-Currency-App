@@ -1,0 +1,53 @@
+.header-container {
+  width: 100%;
+  background-color: #202020;
+}
+.navbar {
+  max-width: 1280px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gold;
+  padding: 10px 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo p {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.pages ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+.pages ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+@media only screen and (max-width: 680px) {
+  .navbar {
+    padding: 10px;
+  }
+  .logo p {
+    font-size: 24px;
+  }
+  .pages ul {
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .logo p {
+    font-size: 18px;
+  }
+  .pages ul {
+    gap: 0.5rem;
+  }
+  .pages ul li a {
+    font-size: 14px;
+  }
+}
